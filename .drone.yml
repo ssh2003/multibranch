@@ -10,6 +10,6 @@ pipeline:
     commands:
       - cat /etc/resolv.conf
       - echo "BBBBBB"
-      - ls -la
+      - ping -c 3 ukr.net
     when:
       status: [ success, failure ]
