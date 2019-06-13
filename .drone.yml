@@ -6,7 +6,7 @@ clone:
     
 pipeline:
   resolve:
-    image: ubuntu
+    image: debian
     commands:
       - cat /etc/resolv.conf
       - echo "BBBBB"
