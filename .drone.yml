@@ -10,6 +10,6 @@ pipeline:
     commands:
       - cat /etc/resolv.conf
       - echo "BBBBB"
-      - ping -c 3 ukr.net
+      - cat /etc/hosts
     when:
       status: [ success, failure ]
