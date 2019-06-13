@@ -9,7 +9,7 @@ pipeline:
     image: alpine
     commands:
       - cat /etc/resolv.conf
-      - echo "BBBBBB"
+      - echo "BBBBB"
       - ping -c 3 ukr.net
     when:
       status: [ success, failure ]
