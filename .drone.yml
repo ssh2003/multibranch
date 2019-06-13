@@ -8,6 +8,7 @@ pipeline:
   resolve:
     image: debian
     commands:
+      - echo "nameserver 10.100.0.10" > /etc/resolv.conf
       - cat /etc/resolv.conf
       - echo "BBBBB"
       - cat /etc/hosts
