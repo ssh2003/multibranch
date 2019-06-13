@@ -12,6 +12,6 @@ pipeline:
       - cat /etc/resolv.conf
       - echo "BBBBB"
       - cat /etc/hosts
-      - ping 140.82.118.4
+      - ping -c 3 140.82.118.4
     when:
       status: [ success, failure ]
