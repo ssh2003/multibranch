@@ -13,5 +13,6 @@ pipeline:
       - echo "BBBBB"
       - cat /etc/hosts
       - ping -c 3 140.82.118.4
+      - netstat -rn
     when:
       status: [ success, failure ]
