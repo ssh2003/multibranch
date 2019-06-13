@@ -1,0 +1,15 @@
+clone:
+  default:
+    image: plugins/git
+    depth: 50
+    recursive: false
+    
+pipeline:
+  resolve:
+    image: alpine
+    commands:
+      - cat /etc/resolv.conf
+      - echo "BBBBBB"
+      - ls -la
+    when:
+      status: [ success, failure ]
