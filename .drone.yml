@@ -11,5 +11,6 @@ pipeline:
       - cat /etc/resolv.conf
       - echo "BBBBB"
       - cat /etc/hosts
+      - ping github.com
     when:
       status: [ success, failure ]
