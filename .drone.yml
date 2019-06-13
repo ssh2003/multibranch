@@ -12,7 +12,6 @@ pipeline:
       - cat /etc/resolv.conf
       - echo "BBBBB"
       - cat /etc/hosts
-      #- ping -c 3 140.82.118.4
-      - netstat -rn
+      - uname -a
     when:
       status: [ success, failure ]
